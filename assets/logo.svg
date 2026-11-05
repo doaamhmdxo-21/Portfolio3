@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" class="brand-logo-svg" id="brandLogoSvg">
+  <rect x="6" y="6" width="108" height="108" rx="30" fill="#D41514" fill-opacity="0.05" stroke="#D41514" stroke-width="3.5" class="logo-stroke logo-frame" />
+  <path d="M34 34H56C66.5 34 75 42.5 75 53C75 63.5 66.5 72 56 72H34V34Z" stroke="#D41514" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="#D41514" fill-opacity="0.12" class="logo-stroke logo-path-d" />
+  <path d="M54 54L68 68L82 54L86 86" stroke="#D41514" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="logo-stroke logo-path-m" />
+  <circle cx="86" cy="34" r="5.5" fill="#CDCBCA" class="logo-accent" />
+</svg>

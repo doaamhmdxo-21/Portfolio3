@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Doaa Mohamed Salah | Web Developer & Data Engineer</title>
+  
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description" content="Portfolio of Doaa Mohamed Salah - Web Developer & Data Engineer. BIS graduate, Shifa Web App team lead, Microsoft Data Engineer & AI Ambassador." />
+  <meta name="keywords" content="Doaa Mohamed Salah, Web Developer, Data Engineer, ASP.NET Core, Power BI, SQL, Python, ETL, Data Pipelines, Portfolio, Egypt" />
+  <meta name="author" content="Doaa Mohamed Salah" />
+  <meta property="og:title" content="Doaa Mohamed Salah | Web Developer & Data Engineer" />
+  <meta property="og:description" content="Building data pipelines and modern web applications, from raw data to working products." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/doaamhmdxo-21" />
+  
+  <!-- Favicon Monogram (Deep Teal Brand) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='26' fill='%23080808' stroke='%23D41514' stroke-width='6'/><text x='50' y='64' font-family='system-ui,sans-serif' font-size='42' font-weight='800' fill='%23CDCBCA' text-anchor='middle'>DS</text></svg>" />
+
+  <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Devicon CDN for Real Tech Brand Logos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  
+  <!-- Font Awesome 6 CDN for UI and Brand Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Progressive Enhancement: Detect JavaScript immediately -->
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript>
+    <style>
+      #preloader { display: none !important; }
+      html.js [data-reveal], [data-reveal], .hero-word { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+  <!-- Interactive Animated Background Canvas -->
+  <canvas id="ambientCanvas" class="ambient-canvas-bg" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================= -->
+  <!-- 0. CLEAN LOGO PRELOADER (Swappable: assets/logo.svg)                       -->
+  <!-- ========================================================================= -->
+  <div id="preloader" class="preloader" role="status" aria-label="Loading Doaa Mohamed Salah Portfolio" tabindex="0" title="Click or press any key to skip">
+    <div class="preloader-logo-container" id="preloaderLogoContainer">
+      <!-- Inlined clean SVG representation of assets/logo.svg for instant stroke animation -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" class="preloader-brand-logo" id="preloaderLogoSvg">
+        <rect x="6" y="6" width="108" height="108" rx="30" fill="currentColor" fill-opacity="0.05" stroke="currentColor" stroke-width="3.5" class="logo-stroke logo-frame" />
+        <path d="M34 34H56C66.5 34 75 42.5 75 53C75 63.5 66.5 72 56 72H34V34Z" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="currentColor" fill-opacity="0.12" class="logo-stroke logo-path-d" />
+        <path d="M54 54L68 68L82 54L86 86" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="logo-stroke logo-path-m" />
+        <circle cx="86" cy="34" r="5.5" fill="var(--accent, #CDCBCA)" class="logo-accent" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- Custom Interactive Cursor (Desktop Only) -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="customCursorFollower" aria-hidden="true"></div>
+
+  <!-- Background Animated Gradient Blobs -->
+  <div class="blob-wrapper" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 1. NAVBAR                                                                 -->
+  <!-- ========================================================================= -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="navbar-inner container">
+        
+        <!-- Designed SVG Monogram/Wordmark Logo with Refined Editorial Colors -->
+        <a href="#home" class="nav-logo" aria-label="Doaa Mohamed Salah Portfolio Home">
+          <svg class="logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="14" fill="#D41514" fill-opacity="0.08" stroke="#D41514" stroke-width="1.5" />
+            <path d="M14 14H22C26.4183 14 30 17.5817 30 22C30 26.4183 26.4183 30 22 30H14V14Z" fill="#D41514" fill-opacity="0.15" stroke="#D41514" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 21L27 27L33 21L35 34" stroke="#D41514" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="34" cy="14" r="2.5" fill="#CDCBCA" />
+          </svg>
+          <span class="logo-text">DMS<span class="logo-dot">.</span><span class="logo-sub">dev</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links (Strictly: Home, About, Education, Certifications, Skills, Projects, Services, Testimonials) -->
+        <ul class="nav-links" id="navLinks" role="menubar">
+          <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+          <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="#education" class="nav-link" role="menuitem">Education</a></li>
+          <li role="none"><a href="#certifications" class="nav-link" role="menuitem">Certifications</a></li>
+          <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+          <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+          
+          <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+          <li role="none"><a href="#testimonials" class="nav-link" role="menuitem">Testimonials</a></li>
+        </ul>
+
+        <!-- Action Controls: Theme Toggle & Language Toggle & Mobile Hamburger -->
+        <div class="nav-actions">
+          <!-- Light/Dark Mode Switch -->
+          <button class="action-btn theme-toggle" id="themeToggle" aria-label="Toggle light and dark color theme" title="Toggle Theme">
+            <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+            <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+          </button>
+
+          <!-- EN / AR Language Switcher with dynamic RTL -->
+          <button class="action-btn lang-toggle" id="langToggle" aria-label="Toggle Arabic and English languages" title="Switch Language">
+            <span class="lang-text" id="langLabel">AR</span>
+          </button>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Slide-in Glass Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-logo">
+        <span class="logo-text">DMS<span class="logo-dot">.</span><span class="logo-sub">dev</span></span>
+      </div>
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close navigation menu">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#education" class="mobile-nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#certifications" class="mobile-nav-link"><i class="fa-solid fa-award"></i> Certifications</a></li>
+      <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+      
+      <li><a href="#services" class="mobile-nav-link"><i class="fa-solid fa-cube"></i> Services</a></li>
+      <li><a href="#testimonials" class="mobile-nav-link"><i class="fa-solid fa-comments"></i> Testimonials</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <p class="drawer-location"><i class="fa-solid fa-location-dot"></i> Giza, Egypt</p>
+      <p class="drawer-email"><a href="mailto:doaa.mhmd.xo@gmail.com"><i class="fa-solid fa-envelope"></i> doaa.mhmd.xo@gmail.com</a></p>
+      <p class="drawer-phone"><a href="tel:+201115137318"><i class="fa-solid fa-phone"></i> +20 111 513 7318</a></p>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT AREA                                                         -->
+  <!-- ========================================================================= -->
+  <main id="mainContent">
+
+    <!-- ======================================================================= -->
+    <!-- 2. HOME (HERO) SECTION                                                  -->
+    <!-- ======================================================================= -->
+    <section class="hero-section" id="home" aria-label="Introduction and Hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Text & CTA -->
+        <div class="hero-content" data-reveal="fade-right">
+          <div class="hero-badge">
+            <span class="status-indicator"></span>
+            <span class="hero-greeting" data-i18n="heroGreeting">Available for Opportunities</span>
+          </div>
+
+          <div class="name-container">
+            <div class="name-glow-aura" aria-hidden="true"></div>
+            <h1 class="hero-name name-heartbeat-glow">
+              <span class="name-gradient"><span class="hero-word">Doaa</span> <span class="hero-word">Mohamed</span> <span class="hero-word">Salah</span></span>
+            </h1>
+          </div>
+
+          <h2 class="hero-headline">
+            <span class="typed-prefix" data-i18n="heroHeadlinePrefix">Passionate </span>
+            <span class="typed-text" id="typedElement"></span>
+            <span class="typed-cursor" aria-hidden="true">|</span>
+          </h2>
+
+          <p class="hero-tagline" data-i18n="heroTagline">
+            "Building data pipelines and modern web applications, from raw data to working products."
+          </p>
+
+          <!-- Core Pillar Badges (Interactive Glowing Capsules) -->
+          <div class="hero-specialty-capsules" data-reveal="fade-up">
+            <span class="specialty-capsule capsule-fullstack">
+              <i class="devicon-csharp-plain colored"></i>
+              <span>Full Stack Developer</span>
+            </span>
+            <span class="specialty-capsule capsule-data">
+              <i class="fa-solid fa-database"></i>
+              <span>Data Engineering</span>
+            </span>
+            <span class="specialty-capsule capsule-lead">
+              <i class="fa-solid fa-users-gear"></i>
+              <span>Team Leadership</span>
+            </span>
+          </div>
+
+          <!-- Dual Hero Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="exploreWorkBtn">
+              <span class="btn-text" data-i18n="exploreWork">Explore My Work</span>
+              <i class="fa-solid fa-arrow-right btn-icon" aria-hidden="true"></i>
+            </a>
+            <a href="assets/Doaa_Mohamed_Salah_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-glass" id="downloadCvBtn">
+              <i class="fa-solid fa-file-arrow-down btn-icon" aria-hidden="true"></i>
+              <span class="btn-text" data-i18n="downloadCv">Download CV</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Creative Visual (Floating Glass Elements & Portrait Card) -->
+        <div class="hero-visual" data-reveal="fade-left">
+          <div class="visual-canvas">
+            
+            <!-- Dynamic 3D Orbital Rings & Planetary Satellites System -->
+            <div class="orbital-system" aria-hidden="true">
+              <div class="orbital-ring ring-primary">
+                <span class="orbit-satellite sat-1" title="C# / .NET"><i class="devicon-csharp-plain"></i></span>
+                <span class="orbit-sparkle spark-1"></span>
+              </div>
+              <div class="orbital-ring ring-secondary">
+                <span class="orbit-satellite sat-2" title="Power BI & Analytics"><i class="fa-solid fa-chart-pie"></i></span>
+                <span class="orbit-satellite sat-3" title="JavaScript & Web"><i class="fa-brands fa-js"></i></span>
+                <span class="orbit-sparkle spark-2"></span>
+              </div>
+              <div class="orbital-ring ring-tertiary">
+                <span class="orbit-sparkle spark-3"></span>
+              </div>
+            </div>
+
+            <!-- Central Frosted Portrait Card (Click to preview full photo in lightbox) -->
+            <div class="hero-profile-card cert-lightbox-trigger" data-cert-img="assets/doaa-photo.jpg" data-cert-title="Doaa Mohamed Salah" data-cert-issuer="Web Developer & Data Engineer" role="button" tabindex="0" title="Click to view full photo">
+              <div class="avatar-glow avatar-glow-pulse"></div>
+              <div class="hero-img-wrapper">
+                <img src="assets/doaa-photo.jpg" alt="Doaa Mohamed Salah - Web Developer & Data Engineer" width="575" height="1024" fetchpriority="high" />
+                <div class="hero-img-overlay">
+                  <span class="view-photo-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> View Full Photo</span>
+                </div>
+                <div class="hero-img-badge">
+                  <span class="hero-badge-name">
+                    <span class="status-indicator"></span>
+                    Doaa Mohamed Salah
+                  </span>
+                  <span class="hero-badge-tag">BIS • Data & Web</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Enhanced Floating Kinetic Badges with 3D Depth & Glowing Accents -->
+            <div class="floating-badge badge-1 badge-enhanced">
+              <div class="badge-icon devicon-csharp-plain colored"></div>
+              <div class="badge-info">
+                <span class="badge-title">Full-Stack Tech</span>
+                <span class="badge-subtitle">ASP.NET Core &amp; Modern JS</span>
+              </div>
+              <span class="badge-glow-pill">Live</span>
+            </div>
+
+            <div class="floating-badge badge-2 badge-enhanced">
+              <div class="badge-icon chart-animated-icon">
+                <div class="mini-chart-bars">
+                  <span class="chart-bar bar-1"></span>
+                  <span class="chart-bar bar-2"></span>
+                  <span class="chart-bar bar-3"></span>
+                </div>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">Data Engineering</span>
+                <span class="badge-subtitle">Pipelines, SQL &amp; Power BI</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-3 badge-enhanced">
+              <div class="badge-icon gear-animated-icon">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">Team Leadership</span>
+                <span class="badge-subtitle">Shifa Web App Project</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 3. ABOUT SECTION                                                        -->
+    <!-- ======================================================================= -->
+    <section class="section about-section" id="about" aria-labelledby="aboutHeading">
+      <div class="container">
+        
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-tag" data-i18n="aboutTag">My Journey</span>
+          <h2 class="section-title" id="aboutHeading" data-i18n="aboutTitle">Behind the Code & Data</h2>
+          <p class="section-subtitle" data-i18n="aboutSubtitle">Bridging business intelligence, relational architecture, and modern web applications.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Story Card -->
+          <div class="glass-card about-story-card" data-reveal="fade-right">
+            <div class="card-inner">
+              <h3 class="card-title">
+                <i class="fa-solid fa-compass-drafting accent-icon"></i>
+                <span data-i18n="storyTitle">From BIS Foundations to Impactful Solutions</span>
+              </h3>
+              <p class="story-paragraph" data-i18n="storyP1">
+                I am a Web Developer, Data Engineer, and Business Information Systems (BIS) graduate from the Faculty of Commerce & Business Administration. My academic journey provided a comprehensive grounding in <strong>systems analysis & design</strong> (crafting use case diagrams, activity workflows, ERD, and normalized relational schemas), <strong>object-oriented programming in Java</strong>, <strong>relational database engineering</strong>, and <strong>business intelligence</strong>.
+              </p>
+              <p class="story-paragraph" data-i18n="storyP2">
+                As a project leader, I spearheaded the end-to-end development of <em>Shifa</em> — a modern web application for booking clinic appointments and locating nearby pharmacies. Complementing this, I completed rigorous certifications including the <strong>Microsoft Data Engineer (MSDE)</strong> track through DEPI (200 hours) and the <strong>AI Ambassadors program</strong> through NTI (80 hours).
+              </p>
+              <p class="story-paragraph" data-i18n="storyP3">
+                I thrive at the intersection where clean, maintainable web products meet high-performance data models and automated data pipelines. I am actively open to <strong>Web Developer</strong>, <strong>Data Engineering</strong>, or <strong>Data Analyst</strong> roles.
+              </p>
+
+              <!-- Language Proficiency Card -->
+              <div class="languages-inline-card">
+                <h4 class="mini-heading"><i class="fa-solid fa-earth-americas"></i> <span data-i18n="languagesTitle">Language Proficiency</span></h4>
+                <div class="lang-chips">
+                  <div class="lang-chip">
+                    <span class="lang-flag">🇪🇬</span>
+                    <span class="lang-name" data-i18n="langAr">Arabic</span>
+                    <span class="lang-level badge-accent" data-i18n="langArLevel">Native</span>
+                  </div>
+                  <div class="lang-chip">
+                    <span class="lang-flag">🇬🇧</span>
+                    <span class="lang-name" data-i18n="langEn">English</span>
+                    <span class="lang-level badge-accent" data-i18n="langEnLevel">Upper-Intermediate (B2)</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: 4 Aligned Key Points Checklist & Stats Cards -->
+          <div class="about-right-column" data-reveal="fade-left">
+            
+            <!-- Neat 4-Point Checklist Card -->
+            <div class="glass-card checklist-card">
+              <h4 class="card-title">
+                <i class="fa-solid fa-list-check accent-icon"></i>
+                <span data-i18n="coreCompetencies">Core Competencies & Discipline</span>
+              </h4>
+              <ul class="clean-checklist">
+                <li class="checklist-item">
+                  <span class="check-circle"><i class="fa-solid fa-check"></i></span>
+                  <div class="check-content">
+                    <strong>Architectural Systems Analysis:</strong>
+                    <span>Deep expertise in modeling use case diagrams, activity workflows, and structural ERDs.</span>
+                  </div>
+                </li>
+                <li class="checklist-item">
+                  <span class="check-circle"><i class="fa-solid fa-check"></i></span>
+                  <div class="check-content">
+                    <strong>Full-Lifecycle Web Engineering:</strong>
+                    <span>Building dependable, responsive web applications using ASP.NET Core MVC, modern JS & C#.</span>
+                  </div>
+                </li>
+                <li class="checklist-item">
+                  <span class="check-circle"><i class="fa-solid fa-check"></i></span>
+                  <div class="check-content">
+                    <strong>Relational Schema & ETL Modeling:</strong>
+                    <span>Designing robust database structures, constraint integrity, and clean automated data pipelines.</span>
+                  </div>
+                </li>
+                <li class="checklist-item">
+                  <span class="check-circle"><i class="fa-solid fa-check"></i></span>
+                  <div class="check-content">
+                    <strong>Business Intelligence & Analytics:</strong>
+                    <span>Transforming multi-source datasets into dynamic Power BI dashboards with actionable KPIs.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Animated Stat Counter Cards (4 cards) -->
+            <div class="stats-grid">
+              
+              <div class="glass-card stat-card">
+                <div class="stat-number-wrapper">
+                  <span class="stat-counter" data-target="4">0</span>
+                  <span class="stat-plus">+</span>
+                </div>
+                <span class="stat-label" data-i18n="statProjects">Featured Projects</span>
+              </div>
+
+              <div class="glass-card stat-card">
+                <div class="stat-number-wrapper">
+                  <span class="stat-counter" data-target="3">0</span>
+                  <span class="stat-plus"></span>
+                </div>
+                <span class="stat-label" data-i18n="statPrograms">Training Programs</span>
+              </div>
+
+              <div class="glass-card stat-card">
+                <div class="stat-number-wrapper">
+                  <span class="stat-counter" data-target="200">0</span>
+                  <span class="stat-plus"> hrs</span>
+                </div>
+                <span class="stat-label" data-i18n="statDE">Data Engineering Training</span>
+              </div>
+
+              <div class="glass-card stat-card">
+                <div class="stat-number-wrapper">
+                  <span class="stat-counter" data-target="80">0</span>
+                  <span class="stat-plus"> hrs</span>
+                </div>
+                <span class="stat-label" data-i18n="statAI">AI Training (NTI)</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 4. EDUCATION SECTION                                                    -->
+    <!-- ======================================================================= -->
+    <section class="section education-section" id="education" aria-labelledby="eduHeading">
+      <div class="container">
+        
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-tag" data-i18n="eduTag">Academic Foundation</span>
+          <h2 class="section-title" id="eduHeading" data-i18n="eduTitle">Education & Specialization</h2>
+          <p class="section-subtitle" data-i18n="eduSubtitle">Solid grounding combining business commerce strategy with advanced information technology.</p>
+        </div>
+
+        <div class="education-card-wrapper" data-reveal="fade-up">
+          <div class="glass-card education-card">
+            
+            <div class="edu-header">
+              <div class="edu-institution-badge">
+                <i class="fa-solid fa-graduation-cap edu-icon"></i>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-status badge-accent" data-i18n="graduated">Graduated</span>
+                <h3 class="edu-degree" data-i18n="degreeTitle">Bachelor's Degree in Business Information Systems (BIS)</h3>
+                <h4 class="edu-faculty" data-i18n="facultyName">Faculty of Commerce & Business Administration</h4>
+              </div>
+            </div>
+
+            <p class="edu-description" data-i18n="eduDesc">
+              A specialized dual-discipline curriculum marrying organizational operations, financial workflows, and business strategy with computer science, software engineering architectures, database management systems, and analytical intelligence.
+            </p>
+
+            <div class="edu-focus-areas">
+              <h4 class="focus-title" data-i18n="coreFocusAreas"><i class="fa-solid fa-shapes"></i> Core Focus Areas & Applied Knowledge</h4>
+              <div class="focus-chips">
+                
+                <div class="chip">
+                  <i class="fa-solid fa-diagram-project"></i>
+                  <span>Systems Analysis & Design (Use Case, Activity, ERD)</span>
+                </div>
+
+                <div class="chip">
+                  <i class="fa-solid fa-database"></i>
+                  <span>Relational Database Design (Oracle, MySQL, SQL)</span>
+                </div>
+
+                <div class="chip">
+                  <i class="devicon-java-plain"></i>
+                  <span>Object-Oriented Programming (OOP in Java)</span>
+                </div>
+
+                <div class="chip">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <span>Web Application Development</span>
+                </div>
+
+                <div class="chip">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <span>Business Intelligence & Data Analysis</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 5. CERTIFICATIONS SECTION                                               -->
+    <!-- ======================================================================= -->
+    <section class="section cert-section" id="certifications" aria-labelledby="certHeading">
+      <div class="container">
+        
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-tag" data-i18n="certTag">Credentials</span>
+          <h2 class="section-title" id="certHeading" data-i18n="certTitle">Professional Certifications & Training</h2>
+          <p class="section-subtitle" data-i18n="certSubtitle">Intensive hands-on programs delivered by top governmental initiatives and industry leaders.</p>
+        </div>
+
+        <div class="cert-grid">
+          
+          <!-- Certification 1: Microsoft Data Engineer (MSDE) - DEPI Official Logo -->
+          <article class="glass-card cert-card" data-reveal="fade-up">
+            <div class="cert-visual-banner cert-banner-depi">
+              <div class="cert-org-logo-wrapper" title="Digital Egypt Pioneers Initiative (DEPI)">
+                <img src="assets/logo-depi.jpg" alt="رواد مصر الرقمية - Digital Egypt Pioneers Initiative (DEPI)" class="cert-org-logo" width="90" height="90" loading="lazy" />
+              </div>
+              <div class="cert-hours-badge">200 Hours</div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-issuer-row">
+                <span class="cert-issuer">DEPI • Ministry of Communications (MCIT)</span>
+                <span class="cert-org-pill">MCIT Initiative</span>
+              </div>
+              <h3 class="cert-title">Microsoft Data Engineer (MSDE)</h3>
+              <p class="cert-track">AI & Data Science Track</p>
+              <p class="cert-details">
+                Comprehensive 200-hour intensive track covering data pipelines, relational & NoSQL schemas, ETL data processing, SQL optimization, and enterprise data architecture principles.
+              </p>
+              <div class="cert-cert-status">
+                <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Track & Capstone</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Certification 2: AI Ambassador (NTI) - Real Certificate & Official Logo -->
+          <article class="glass-card cert-card" data-reveal="fade-up" style="--delay: 150ms;">
+            <div class="cert-image-preview cert-lightbox-trigger" data-cert-img="assets/cert-nti-ai-ambassador.jpg" data-cert-title="Artificial Intelligence Ambassador Program" data-cert-issuer="National Telecommunication Institute (NTI) & ESE" role="button" tabindex="0" title="Click to view verified certificate">
+              <img src="assets/cert-nti-ai-ambassador.jpg" alt="Official NTI AI Ambassador Certificate awarded to Doaa Mohamed Salah Eldeen Mohamed" width="1280" height="905" loading="lazy" />
+              <div class="cert-img-overlay">
+                <span class="view-cert-chip"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</span>
+              </div>
+              <!-- Floating Official Brand Logo Badge -->
+              <div class="cert-floating-logo-badge" title="National Telecommunication Institute (NTI)">
+                <img src="assets/logo-nti.jpg" alt="NTI Official Logo" width="48" height="48" loading="lazy" />
+              </div>
+              <div class="cert-hours-badge float-hours">80 Hours</div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-issuer-row">
+                <span class="cert-issuer">National Telecommunication Institute (NTI) & ESE</span>
+                <span class="cert-org-pill">Accredited Institute</span>
+              </div>
+              <h3 class="cert-title">Artificial Intelligence Ambassador</h3>
+              <p class="cert-track">Advanced (40 hrs) + Beginner (40 hrs)</p>
+              <p class="cert-details">
+                Rigorous training covering Machine Learning fundamentals, Exploratory Data Analysis (EDA), Natural Language Processing, Generative AI principles, and a final capstone Power BI dashboard project.
+              </p>
+              <div class="cert-cert-status cert-status-action">
+                <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Official Certificate Verified</span>
+                <button type="button" class="btn-cert-link cert-lightbox-trigger" data-cert-img="assets/cert-nti-ai-ambassador.jpg" data-cert-title="Artificial Intelligence Ambassador Program" data-cert-issuer="National Telecommunication Institute (NTI) & ESE">
+                  Preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Certification 3: EBSM Banque Misr - Real Certificate & Official Logo -->
+          <article class="glass-card cert-card" data-reveal="fade-up" style="--delay: 300ms;">
+            <div class="cert-image-preview cert-lightbox-trigger" data-cert-img="assets/cert-ebsm-banque-misr.jpg" data-cert-title="Banque Misr EBSM Banking Fellowship Certificate of Achievement" data-cert-issuer="Banque Misr & Egyptian Banking System Model (EBSM)" role="button" tabindex="0" title="Click to view verified certificate">
+              <img src="assets/cert-ebsm-banque-misr.jpg" alt="Official Banque Misr EBSM Certificate of Achievement awarded to Doaa Mohamed Salah" width="1280" height="905" loading="lazy" />
+              <div class="cert-img-overlay">
+                <span class="view-cert-chip"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</span>
+              </div>
+              <!-- Floating Official Brand Logo Badge -->
+              <div class="cert-floating-logo-badge" title="Banque Misr">
+                <img src="assets/logo-banque-misr.jpg" alt="Banque Misr Official Logo" width="48" height="48" loading="lazy" />
+              </div>
+              <div class="cert-hours-badge float-hours">Fellowship</div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-issuer-row">
+                <span class="cert-issuer">Egyptian Banking System Model (EBSM) • Banque Misr</span>
+                <span class="cert-org-pill">Banking Partner</span>
+              </div>
+              <h3 class="cert-title">Banking Fellowship & Simulation</h3>
+              <p class="cert-track">Financial Systems & Banking Model</p>
+              <p class="cert-details">
+                Practical simulation program covering modern banking processes, enterprise financial flows, data compliance, and information system operations in the Egyptian financial ecosystem.
+              </p>
+              <div class="cert-cert-status cert-status-action">
+                <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Official Certificate Verified</span>
+                <button type="button" class="btn-cert-link cert-lightbox-trigger" data-cert-img="assets/cert-ebsm-banque-misr.jpg" data-cert-title="Banque Misr EBSM Banking Fellowship Certificate of Achievement" data-cert-issuer="Banque Misr & Egyptian Banking System Model (EBSM)">
+                  Preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interconnecting Glowing Energy Bridge: Certifications -> Skills -->
+    <div class="section-energy-bridge" aria-hidden="true" data-reveal="fade-up">
+      <div class="bridge-spark left-spark"></div>
+      <div class="bridge-beam">
+        <div class="beam-glow"></div>
+        <div class="beam-pulse-packet packet-1"></div>
+        <div class="beam-pulse-packet packet-2"></div>
+      </div>
+      <div class="bridge-badge">
+        <i class="fa-solid fa-bolt-lightning"></i>
+        <span>Accredited Knowledge &bull; Technical Arsenal</span>
+      </div>
+      <div class="bridge-beam">
+        <div class="beam-glow"></div>
+        <div class="beam-pulse-packet packet-3"></div>
+      </div>
+      <div class="bridge-spark right-spark"></div>
+    </div>
+
+
+    <!-- ======================================================================= -->
+    <!-- 6. SKILLS SECTION (Interactive Tabs with Real Brand Logos)              -->
+    <!-- ======================================================================= -->
+    <section class="section skills-section" id="skills" aria-labelledby="skillsHeading">
+      <div class="container">
+        
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-tag" data-i18n="skillsTag">Technical Arsenal</span>
+          <h2 class="section-title" id="skillsHeading" data-i18n="skillsTitle">Skills & Competencies</h2>
+          <p class="section-subtitle" data-i18n="skillsSubtitle">Real brand logos, categorized into intuitive tabs to maintain visual clarity.</p>
+        </div>
+
+        <!-- Skills Tabs Navigation -->
+        <div class="skills-tab-nav" role="tablist" aria-label="Skill categories" data-reveal="fade-up">
+          <button class="skill-tab-btn active" role="tab" aria-selected="true" aria-controls="tab-technical" id="btn-technical">
+            <i class="fa-solid fa-code"></i>
+            <span data-i18n="tabTechnical">Technical Skills</span>
+          </button>
+          <button class="skill-tab-btn" role="tab" aria-selected="false" aria-controls="tab-tools" id="btn-tools">
+            <i class="fa-solid fa-wrench"></i>
+            <span data-i18n="tabTools">Development Tools</span>
+          </button>
+          <button class="skill-tab-btn" role="tab" aria-selected="false" aria-controls="tab-soft" id="btn-soft">
+            <i class="fa-solid fa-people-group"></i>
+            <span data-i18n="tabSoft">Soft Skills</span>
+          </button>
+          <button class="skill-tab-btn" role="tab" aria-selected="false" aria-controls="tab-languages" id="btn-languages">
+            <i class="fa-solid fa-language"></i>
+            <span data-i18n="tabLanguages">Languages</span>
+          </button>
+        </div>
+
+        <!-- TAB 1: TECHNICAL SKILLS -->
+        <div class="skill-tab-panel active" id="tab-technical" role="tabpanel" aria-labelledby="btn-technical">
+          <div class="tab-category-desc">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Programming languages, web architectures, relational database management systems, and data pipelines.</span>
+          </div>
+
+          <div class="skills-matrix">
+            
+            <div class="skill-card">
+              <i class="devicon-html5-plain colored skill-icon"></i>
+              <span class="skill-name">HTML5</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-css3-plain colored skill-icon"></i>
+              <span class="skill-name">CSS3</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-javascript-plain colored skill-icon"></i>
+              <span class="skill-name">JavaScript (ES6+)</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-react-original colored skill-icon"></i>
+              <span class="skill-name">React</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-vitejs-plain colored skill-icon"></i>
+              <span class="skill-name">Vite</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-python-plain colored skill-icon"></i>
+              <span class="skill-name">Python</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-chart-pie skill-icon" style="color: #8B5CF6;"></i>
+              <span class="skill-name">Data Analysis</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-csharp-plain colored skill-icon"></i>
+              <span class="skill-name">C#</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-dotnetcore-plain colored skill-icon"></i>
+              <span class="skill-name">ASP.NET Core MVC</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-java-plain colored skill-icon"></i>
+              <span class="skill-name">Java</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-database skill-icon" style="color: #00758F;"></i>
+              <span class="skill-name">SQL</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-arrows-split-up-and-left skill-icon" style="color: #EC4899;"></i>
+              <span class="skill-name">ETL Pipelines</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-robot skill-icon" style="color: #6366F1;"></i>
+              <span class="skill-name">Machine Learning</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-comment-dots skill-icon" style="color: #10B981;"></i>
+              <span class="skill-name">NLP</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-magnifying-glass-chart skill-icon" style="color: #F59E0B;"></i>
+              <span class="skill-name">EDA</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-wand-magic-sparkles skill-icon" style="color: #8B5CF6;"></i>
+              <span class="skill-name">Generative AI</span>
+            </div>
+
+            <div class="skill-card">
+              <img src="assets/logos/skill-sqlserver.png" alt="Microsoft SQL Server" class="skill-icon-img" loading="lazy" />
+              <span class="skill-name">SQL Server</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-oracle-original colored skill-icon"></i>
+              <span class="skill-name">Oracle</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-mysql-original colored skill-icon"></i>
+              <span class="skill-name">MySQL</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-network-wired skill-icon" style="color: #3B82F6;"></i>
+              <span class="skill-name">ADO.NET</span>
+            </div>
+
+            <div class="skill-card">
+              <!-- Power BI SVG Logo -->
+              <svg class="skill-icon svg-icon" viewBox="0 0 24 24" width="38" height="38">
+                <rect x="2" y="12" width="4" height="10" rx="1" fill="#F2C811" />
+                <rect x="8" y="7" width="4" height="15" rx="1" fill="#F2C811" />
+                <rect x="14" y="2" width="4" height="20" rx="1" fill="#F2C811" />
+              </svg>
+              <span class="skill-name">Power BI</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TAB 2: DEVELOPMENT TOOLS -->
+        <div class="skill-tab-panel" id="tab-tools" role="tabpanel" aria-labelledby="btn-tools" hidden>
+          <div class="tab-category-desc">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Development environments, system modeling platforms, and version control tools.</span>
+          </div>
+
+          <div class="skills-matrix">
+            
+            <div class="skill-card">
+              <i class="devicon-git-plain colored skill-icon"></i>
+              <span class="skill-name">Git</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-github-original skill-icon"></i>
+              <span class="skill-name">GitHub</span>
+            </div>
+
+            <div class="skill-card">
+              <img src="assets/logos/skill-visualstudio.jpg" alt="Visual Studio" class="skill-icon-img" loading="lazy" />
+              <span class="skill-name">Visual Studio</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-cube skill-icon" style="color: #D32F2F;"></i>
+              <span class="skill-name">NetBeans</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-figma-plain colored skill-icon"></i>
+              <span class="skill-name">Figma</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-sitemap skill-icon" style="color: #F97316;"></i>
+              <span class="skill-name">Draw.io</span>
+            </div>
+
+            <div class="skill-card">
+              <img src="assets/logos/skill-visualparadigm.png" alt="Visual Paradigm" class="skill-icon-img" loading="lazy" />
+              <span class="skill-name">Visual Paradigm</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fa-solid fa-file-excel skill-icon" style="color: #107C41;"></i>
+              <span class="skill-name">Advanced Excel</span>
+            </div>
+
+            <div class="skill-card">
+              <img src="assets/logos/skill-erd.jpg" alt="ERD / ERDPlus Data Modeling" class="skill-icon-img" loading="lazy" />
+              <span class="skill-name">ERD Modeling</span>
+            </div>
+
+            <div class="skill-card">
+              <img src="assets/logos/skill-fontawesome.png" alt="Font Awesome Iconography" class="skill-icon-img" loading="lazy" />
+              <span class="skill-name">Font Awesome</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TAB 3: SOFT SKILLS -->
+        <div class="skill-tab-panel" id="tab-soft" role="tabpanel" aria-labelledby="btn-soft" hidden>
+          <div class="tab-category-desc">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Leadership competencies, collaborative problem solving, and analytical methodologies.</span>
+          </div>
+
+          <div class="skills-matrix soft-matrix">
+            
+            <div class="skill-card soft-card">
+              <div class="soft-icon-box"><i class="fa-solid fa-crown" style="color: #F59E0B;"></i></div>
+              <h4 class="skill-name">Team Leadership</h4>
+              <p class="soft-desc">Experienced project leader managing scope, delegation, agile sprints, and final deliveries.</p>
+            </div>
+
+            <div class="skill-card soft-card">
+              <div class="soft-icon-box"><i class="fa-solid fa-brain" style="color: #8B5CF6;"></i></div>
+              <h4 class="skill-name">Analytical Problem Solving</h4>
+              <p class="soft-desc">Systematic root-cause diagnosis, structured architectural modeling, and data-driven reasoning.</p>
+            </div>
+
+            <div class="skill-card soft-card">
+              <div class="soft-icon-box"><i class="fa-solid fa-shuffle" style="color: #10B981;"></i></div>
+              <h4 class="skill-name">Adaptability</h4>
+              <p class="soft-desc">Rapidly mastering new engineering stacks, frameworks, data environments, and team workflows.</p>
+            </div>
+
+            <div class="skill-card soft-card">
+              <div class="soft-icon-box"><i class="fa-solid fa-comments" style="color: #3B82F6;"></i></div>
+              <h4 class="skill-name">Effective Communication</h4>
+              <p class="soft-desc">Translating complex technical schemas and metrics into clear stakeholder presentations.</p>
+            </div>
+
+            <div class="skill-card soft-card">
+              <div class="soft-icon-box"><i class="fa-solid fa-handshake-angle" style="color: #EC4899;"></i></div>
+              <h4 class="skill-name">Team Collaboration</h4>
+              <p class="soft-desc">Supportive team member championing code reviews, empathy, and collective excellence.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TAB 4: LANGUAGES -->
+        <div class="skill-tab-panel" id="tab-languages" role="tabpanel" aria-labelledby="btn-languages" hidden>
+          <div class="tab-category-desc">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Global communication capabilities for international teams and cross-border collaboration.</span>
+          </div>
+
+          <div class="languages-display-grid">
+            
+            <div class="glass-card lang-detail-card">
+              <div class="lang-flag-large">🇪🇬</div>
+              <div class="lang-detail-info">
+                <div class="lang-head-row">
+                  <h3 class="lang-title">Arabic</h3>
+                  <span class="badge-accent">Native Language</span>
+                </div>
+                <p class="lang-desc">Mother tongue. Complete command of professional technical writing, presentations, and verbal communication.</p>
+              </div>
+            </div>
+
+            <div class="glass-card lang-detail-card">
+              <div class="lang-flag-large">🇬🇧</div>
+              <div class="lang-detail-info">
+                <div class="lang-head-row">
+                  <h3 class="lang-title">English</h3>
+                  <span class="badge-accent">Upper-Intermediate (B2)</span>
+                </div>
+                <p class="lang-desc">Fluent in technical documentation, architectural reviews, engineering research, and professional team collaboration.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interconnecting Glowing Energy Bridge: Skills -> Projects -->
+    <div class="section-energy-bridge" aria-hidden="true" data-reveal="fade-up">
+      <div class="bridge-spark left-spark"></div>
+      <div class="bridge-beam">
+        <div class="beam-glow"></div>
+        <div class="beam-pulse-packet packet-1"></div>
+      </div>
+      <div class="bridge-badge">
+        <i class="fa-solid fa-code-merge"></i>
+        <span>Technical Arsenal &bull; Real-World Solutions</span>
+      </div>
+      <div class="bridge-beam">
+        <div class="beam-glow"></div>
+        <div class="beam-pulse-packet packet-2"></div>
+      </div>
+      <div class="bridge-spark right-spark"></div>
+    </div>
+
+
+    <!-- ======================================================================= -->
+    <!-- 7. PROJECTS SECTION                                                     -->
+    <!-- ======================================================================= -->
+    <section class="section projects-section" id="projects" aria-labelledby="projectsHeading">
+      <div class="container">
+        
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-tag" data-i18n="projectsTag">Crafted Work</span>
+          <h2 class="section-title" id="projectsHeading" data-i18n="projectsTitle">Featured Projects</h2>
+          <p class="section-subtitle" data-i18n="projectsSubtitle">A curated selection of web applications, business intelligence dashboards, and software systems.</p>
+        </div>
+
+                <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: Shifaa Healthcare Web Application -->
+          <article class="glass-card project-card" data-reveal="fade-up">
+            <div class="project-mockup">
+              <div class="project-image-wrap">
+                <img src="assets/project-shifaa.png" alt="Shifaa – Healthcare Web Application" class="project-img" loading="lazy" width="1200" height="900">
+              </div>
+              <!-- Hover / Mobile Accessible Action Overlay -->
+              <div class="project-actions-overlay">
+                <a href="#projects" class="btn btn-sm btn-primary project-action-btn" title="Live Demo (Placeholder)">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+                <a href="https://github.com/doaamhmdxo-21" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass project-action-btn" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">ASP.NET Core MVC</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">ADO.NET</span>
+                <span class="tech-tag">Figma</span>
+              </div>
+              <h3 class="project-title">Shifa • Clinic Appointments & Nearby Pharmacies</h3>
+              <p class="project-short-desc">
+                Comprehensive healthcare portal enabling patients to discover verified doctors, book appointments, and locate nearby pharmacies with dynamic schedule availability and review systems.
+              </p>
+              
+              <button class="btn btn-glass btn-view-details" data-project="shifa" aria-haspopup="dialog">
+                <span>View Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Sales Performance Dashboard -->
+          <article class="glass-card project-card" data-reveal="fade-up" style="--delay: 75ms;">
+            <div class="project-mockup">
+              <div class="project-image-wrap">
+                <img src="assets/project-sales-dashboard.png" alt="Sales Performance Dashboard (Power BI)" class="project-img" loading="lazy" width="1600" height="900">
+              </div>
+              <div class="project-actions-overlay">
+                <a href="#projects" class="btn btn-sm btn-primary project-action-btn" title="Interactive Report (Placeholder)">
+                  <i class="fa-solid fa-chart-column"></i> View Report
+                </a>
+                <a href="https://github.com/doaamhmdxo-21" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass project-action-btn" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">DAX</span>
+                <span class="tech-tag">Power Query</span>
+                <span class="tech-tag">Data Modeling</span>
+              </div>
+              <h3 class="project-title">Sales Performance Dashboard</h3>
+              <p class="project-short-desc">
+                Interactive retail intelligence dashboard evaluating performance metrics across six major Egyptian governorates with trend lines, product segment filters, and automated KPIs.
+              </p>
+              
+              <button class="btn btn-glass btn-view-details" data-project="sales" aria-haspopup="dialog">
+                <span>View Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Clinic Management Desktop System -->
+          <article class="glass-card project-card" data-reveal="fade-up" style="--delay: 150ms;">
+            <div class="project-mockup">
+              <div class="project-image-wrap">
+                <img src="assets/project-clinic.png" alt="Clinic Management Desktop System" class="project-img" loading="lazy" width="1200" height="900">
+              </div>
+              <div class="project-actions-overlay">
+                <a href="#projects" class="btn btn-sm btn-primary project-action-btn" title="System Demo (Placeholder)">
+                  <i class="fa-solid fa-desktop"></i> View System
+                </a>
+                <a href="https://github.com/doaamhmdxo-21" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass project-action-btn" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">NetBeans</span>
+                <span class="tech-tag">Oracle</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">SQL</span>
+              </div>
+              <h3 class="project-title">Clinic Management Desktop System</h3>
+              <p class="project-short-desc">
+                High-integrity desktop software managing patient enrollment, clinical consultation scheduling, and doctor appointments supported by normalized relational schemas.
+              </p>
+              
+              <button class="btn btn-glass btn-view-details" data-project="clinic" aria-haspopup="dialog">
+                <span>View Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Student GPA Calculator -->
+          <article class="glass-card project-card" data-reveal="fade-up" style="--delay: 225ms;">
+            <div class="project-mockup">
+              <div class="project-image-wrap">
+                <img src="assets/project-gpa.png" alt="GPA Desktop Application" class="project-img" loading="lazy" width="1200" height="900">
+              </div>
+              <div class="project-actions-overlay">
+                <a href="#projects" class="btn btn-sm btn-primary project-action-btn" title="Calculate Now (Placeholder)">
+                  <i class="fa-solid fa-calculator"></i> Try Tool
+                </a>
+                <a href="https://github.com/doaamhmdxo-21" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass project-action-btn" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript (ES6)</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Client Algorithms</span>
+              </div>
+              <h3 class="project-title">Student GPA & Honors Calculator</h3>
+              <p class="project-short-desc">
+                Interactive academic utility applying weighted credit-hour algorithms to compute cumulative grade point averages, semester benchmarks, and institutional honors distinctions.
+              </p>
+              
+              <button class="btn btn-glass btn-view-details" data-project="gpa" aria-haspopup="dialog">
+                <span>View Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: Calculator Desktop Application -->
+          <article class="glass-card project-card" data-reveal="fade-up" style="--delay: 300ms;">
+            <div class="project-mockup">
+              <div class="project-image-wrap">
+                <img src="assets/project-calculator.png" alt="Calculator Desktop Application" class="project-img" loading="lazy" width="1600" height="900">
+              </div>
+              <div class="project-actions-overlay">
+                <a href="#projects" class="btn btn-sm btn-primary project-action-btn" title="Launch Demo (Placeholder)">
+                  <i class="fa-solid fa-play"></i> Launch App
+                </a>
+                <a href="https://github.com/doaamhmdxo-21" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass project-action-btn" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">.NET Windows Forms</span>
+                <span class="tech-tag">Algorithms</span>
+                <span class="tech-tag">UI/UX</span>
+              </div>
+              <h3 class="project-title">Calculator Desktop Application</h3>
+              <p class="project-short-desc">
+                Stand-alone desktop calculator utility featuring responsive button layout, order-of-operation evaluation, continuous expression chaining, and error trapping with zero latency.
+              </p>
+              
+              <button class="btn btn-glass btn-view-details" data-project="calculator" aria-haspopup="dialog">
+                <span>View Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <section class="section services-section" id="services" aria-labelledby="servicesHeading">
+      <div class="container">
+        
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-tag" data-i18n="servicesTag">What I Deliver</span>
+          <h2 class="section-title" id="servicesHeading" data-i18n="servicesTitle">Services & Offerings</h2>
+          <p class="section-subtitle" data-i18n="servicesSubtitle">Tailored digital engineering and analytics solutions crafted to drive measurable value.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1: Web App Development -->
+          <article class="glass-card service-card" data-reveal="fade-up">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <span class="service-price-badge">Custom Scope</span>
+            </div>
+            <h3 class="service-title">Web App Development</h3>
+            <p class="service-desc">
+              Full-lifecycle engineering of responsive, robust web solutions using ASP.NET Core MVC, modern JavaScript, and clean component hierarchies designed for performance, accessibility, and high conversion.
+            </p>
+            <div class="service-deliverables">
+              <span class="badge-mini">Custom Backends</span>
+              <span class="badge-mini">Responsive Frontends</span>
+              <span class="badge-mini">Secure Authentication</span>
+            </div>
+          </article>
+
+          <!-- Service 2: Data Analysis & Dashboards -->
+          <article class="glass-card service-card" data-reveal="fade-up" style="--delay: 100ms;">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <span class="service-price-badge">Custom Scope</span>
+            </div>
+            <h3 class="service-title">Data Analysis & Dashboards</h3>
+            <p class="service-desc">
+              Transforming messy operational spreadsheets and enterprise datasets into clean, executive-ready Power BI dashboards featuring custom DAX measures, automated KPI tracking, and multi-dimensional slicing.
+            </p>
+            <div class="service-deliverables">
+              <span class="badge-mini">Power BI Dashboards</span>
+              <span class="badge-mini">DAX Measures</span>
+              <span class="badge-mini">KPI Scorecards</span>
+            </div>
+          </article>
+
+          <!-- Service 3: Database Design -->
+          <article class="glass-card service-card" data-reveal="fade-up" style="--delay: 200ms;">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <span class="service-price-badge">Custom Scope</span>
+            </div>
+            <h3 class="service-title">Database Design (ERD & SQL)</h3>
+            <p class="service-desc">
+              Architecting normalized relational data models (3NF), Entity Relationship Diagrams (ERDs), integrity constraints, indexing strategies, and optimized SQL procedures across SQL Server, MySQL, and Oracle.
+            </p>
+            <div class="service-deliverables">
+              <span class="badge-mini">ERD Modeling</span>
+              <span class="badge-mini">Normalization</span>
+              <span class="badge-mini">Query Optimization</span>
+            </div>
+          </article>
+
+          <!-- Service 4: ETL & Data Cleaning -->
+          <article class="glass-card service-card" data-reveal="fade-up" style="--delay: 300ms;">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <i class="fa-solid fa-filter-circle-dollar"></i>
+              </div>
+              <span class="service-price-badge">Custom Scope</span>
+            </div>
+            <h3 class="service-title">ETL & Data Cleaning</h3>
+            <p class="service-desc">
+              Building streamlined Extract, Transform, and Load (ETL) pipelines using Python and Power Query to clean erroneous entries, resolve schema discrepancies, and ingest consistent records into analytical repositories.
+            </p>
+            <div class="service-deliverables">
+              <span class="badge-mini">Data Cleansing</span>
+              <span class="badge-mini">ETL Workflows</span>
+              <span class="badge-mini">Pipeline Automation</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Action to open Pricing Plan Modal -->
+        <div class="pricing-cta-wrap text-center" data-reveal="fade-up">
+          <button class="btn btn-primary" id="openPricingBtn" aria-haspopup="dialog">
+            <i class="fa-solid fa-tags"></i>
+            <span data-i18n="viewPricing">View Pricing Plans & Packages</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 9. TESTIMONIALS SECTION                                                 -->
+    <!-- ======================================================================= -->
+    <section class="section testimonials-section" id="testimonials" aria-labelledby="testimonialsHeading">
+      <div class="container">
+        
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-tag" data-i18n="testTag">Endorsements</span>
+          <h2 class="section-title" id="testimonialsHeading" data-i18n="testTitle">Testimonials & Peer Feedback</h2>
+          <p class="section-subtitle" data-i18n="testSubtitle">Reflections from academic supervisors and project team colleagues.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <article class="glass-card testimonial-card" data-reveal="fade-up">
+            <div class="quote-icon-bubble">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "Doaa demonstrated outstanding leadership throughout the Shifa graduation project. Her ability to synthesize complex system requirements into elegant architectural diagrams and lead her engineering teammates was commendable."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar-placeholder">
+                <span>DS</span>
+              </div>
+              <div class="author-details">
+                <h4 class="author-name">Graduation Project Supervisor</h4>
+                <p class="author-role">Faculty of Commerce & Business Administration (BIS)</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="glass-card testimonial-card" data-reveal="fade-up" style="--delay: 150ms;">
+            <div class="quote-icon-bubble">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "Working alongside Doaa on database modeling and backend API design was an enriching experience. She is exceptionally dependable, solves blocking bugs with patience, and elevates the code quality of the whole team."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar-placeholder">
+                <span>SE</span>
+              </div>
+              <div class="author-details">
+                <h4 class="author-name">Engineering Teammate</h4>
+                <p class="author-role">Shifa Project Collaborator</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 10. CONTACT SECTION                                                     -->
+    <!-- ======================================================================= -->
+    <section class="section contact-section" id="contact" aria-labelledby="contactHeading">
+      <div class="container">
+        
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-tag" data-i18n="contactTag">Let's Connect</span>
+          <h2 class="section-title" id="contactHeading" data-i18n="contactTitle">Get In Touch</h2>
+          <p class="section-subtitle" data-i18n="contactSubtitle">Have a project, role opening, or collaboration in mind? Reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Quick Contact Buttons & Modern Location Badge -->
+          <div class="contact-info-column" data-reveal="fade-right">
+            
+            <div class="glass-card contact-channel-card">
+              <h3 class="channel-card-title" data-i18n="directChannels">Direct Communication</h3>
+              <p class="channel-card-desc" data-i18n="channelsDesc">
+                Choose the communication channel that works best for you. I respond promptly to all messages.
+              </p>
+
+              <div class="quick-contact-list">
+                
+                <!-- Email: opens mail client directly -->
+                <a href="mailto:doaa.mhmd.xo@gmail.com" class="quick-contact-btn email-btn" id="emailContactBtn">
+                  <div class="qc-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="qc-content">
+                    <span class="qc-label">Direct Email</span>
+                    <span class="qc-value">doaa.mhmd.xo@gmail.com</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square qc-arrow"></i>
+                </a>
+
+                <!-- WhatsApp: formatted URL with prefilled text -->
+                <a href="https://wa.me/201115137318?text=Hi%20Doaa%2C%20I%20saw%20your%20portfolio..." target="_blank" rel="noopener noreferrer" class="quick-contact-btn whatsapp-btn" id="whatsappContactBtn" aria-label="Chat directly on WhatsApp">
+                  <div class="qc-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                  <div class="qc-content">
+                    <span class="qc-label">Direct Message</span>
+                    <span class="qc-value">WhatsApp</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square qc-arrow" aria-hidden="true"></i>
+                </a>
+
+                <!-- Phone: direct call link -->
+                <a href="tel:+201115137318" class="quick-contact-btn phone-btn" id="phoneContactBtn">
+                  <div class="qc-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="qc-content">
+                    <span class="qc-label">Direct Phone</span>
+                    <span class="qc-value">+20 111 513 7318</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square qc-arrow"></i>
+                </a>
+
+                <!-- GitHub Profile -->
+                <a href="https://github.com/doaamhmdxo-21" target="_blank" rel="noopener noreferrer" class="quick-contact-btn github-btn" id="githubContactBtn">
+                  <div class="qc-icon"><i class="fa-brands fa-github"></i></div>
+                  <div class="qc-content">
+                    <span class="qc-label">GitHub Profile</span>
+                    <span class="qc-value">doaamhmdxo-21</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square qc-arrow"></i>
+                </a>
+
+                <!-- LinkedIn Profile -->
+                <a href="https://www.linkedin.com/in/doaa-mohamed-091164375" target="_blank" rel="noopener noreferrer" class="quick-contact-btn linkedin-btn" id="linkedinContactBtn">
+                  <div class="qc-icon"><i class="fa-brands fa-linkedin"></i></div>
+                  <div class="qc-content">
+                    <span class="qc-label">LinkedIn Network</span>
+                    <span class="qc-value">Doaa Mohamed Salah</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square qc-arrow"></i>
+                </a>
+
+              </div>
+
+              <!-- Location written in English with Modern Icon -->
+              <div class="location-badge">
+                <i class="fa-solid fa-location-crosshairs location-icon"></i>
+                <div class="location-text">
+                  <span class="loc-label">Current Residence</span>
+                  <strong class="loc-val">Giza, Egypt</strong>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Right Column: Sleek Floating Glass Contact Form (Client-Side Validation) -->
+          <div class="contact-form-column" data-reveal="fade-left">
+            <div class="glass-card contact-form-card">
+              <h3 class="channel-card-title" data-i18n="sendMessage">Send a Message</h3>
+              <p class="channel-card-desc" data-i18n="sendDesc">
+                Fill in the form below and I will get back to you within 24 hours.
+              </p>
+
+              <form class="contact-form" id="contactForm" novalidate>
+                
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="senderName" class="form-label" data-i18n="formName">Your Full Name <span class="req">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-user field-icon"></i>
+                    <input type="text" id="senderName" name="name" class="form-control" placeholder="e.g. Sarah Jenkins" required minlength="2" />
+                  </div>
+                  <span class="error-msg" id="nameError">Please enter your name (at least 2 characters).</span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label" data-i18n="formEmail">Email Address <span class="req">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-envelope field-icon"></i>
+                    <input type="email" id="senderEmail" name="email" class="form-control" placeholder="name@company.com" required />
+                  </div>
+                  <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label" data-i18n="formMessage">Your Message <span class="req">*</span></label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fa-solid fa-message field-icon"></i>
+                    <textarea id="senderMessage" name="message" class="form-control" rows="5" placeholder="Tell me about your project, timeline, or open role..." required minlength="10"></textarea>
+                  </div>
+                  <span class="error-msg" id="messageError">Please enter your message (at least 10 characters).</span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                  <span class="btn-text" data-i18n="btnSend">Send Message</span>
+                  <i class="fa-solid fa-paper-plane btn-icon"></i>
+                </button>
+
+                <!-- Client-Side Success Notification Box -->
+                <div class="form-success-box" id="formSuccessMessage" role="alert" aria-live="polite">
+                  <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                  <div class="success-text">
+                    <strong data-i18n="thankYou">Thank you for your message!</strong>
+                    <p data-i18n="msgSentNotice">Your message has been received. I look forward to connecting with you shortly!</p>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 11. FOOTER                                                                -->
+  <!-- ========================================================================= -->
+  <footer class="footer-wrapper" role="contentinfo">
+    <div class="container footer-container">
+
+      <!-- Top Row: Identity & Location -->
+      <div class="footer-identity-row" data-reveal="fade-up">
+        <div class="footer-brand-block">
+          <a href="#home" class="footer-logo" aria-label="Doaa Mohamed Salah Portfolio Home">
+            <svg class="logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="14" fill="#D41514" fill-opacity="0.08" stroke="#D41514" stroke-width="1.5" />
+              <path d="M14 14H22C26.4183 14 30 17.5817 30 22C30 26.4183 26.4183 30 22 30H14V14Z" fill="#D41514" fill-opacity="0.15" stroke="#D41514" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 21L27 27L33 21L35 34" stroke="#D41514" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="34" cy="14" r="2.5" fill="#CDCBCA" />
+            </svg>
+            <span class="logo-text">DMS<span class="logo-dot">.</span><span class="logo-sub">dev</span></span>
+          </a>
+          <p class="footer-tagline-text" data-i18n="footerTagline">
+            Doaa Mohamed Salah — Full Stack Web Developer &amp; Data Engineer.<br>
+            Bridging business information systems with reliable software engineering and high-impact analytics.
+          </p>
+        </div>
+
+        <div class="footer-meta-block">
+          <div class="footer-location-chip">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Giza, Egypt</span>
+          </div>
+          <div class="footer-status-pill">
+            <span class="status-indicator"></span>
+            <span data-i18n="heroGreeting">Available for Opportunities</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Freelance Platforms Section inside Footer -->
+      <div class="footer-freelance-section" data-reveal="fade-up">
+        <div class="footer-freelance-heading-wrap text-center">
+          <span class="footer-freelance-tag" data-i18n="freelanceTag"><i class="fa-solid fa-briefcase"></i> Available on Freelance Platforms</span>
+        </div>
+
+        <div class="footer-freelance-grid">
+          <!-- 1. Ureed -->
+          <a href="https://app.ureed.com/profile/doaa.mhmd.xo" target="_blank" rel="noopener noreferrer" class="footer-freelance-card" data-platform="ureed" aria-label="Ureed" title="Ureed - Professional Marketplace">
+            <div class="footer-platform-logo-box">
+              <img src="assets/logos/freelance-ureed.png" alt="Ureed" class="footer-platform-logo" loading="lazy" />
+            </div>
+            <span class="footer-platform-name">Ureed</span>
+            <i class="fa-solid fa-arrow-up-right-from-square footer-platform-link-icon" aria-hidden="true"></i>
+          </a>
+
+          <!-- 2. Baaeed -->
+          <a href="https://baaeed.com/u/d0aa_mhmd" target="_blank" rel="noopener noreferrer" class="footer-freelance-card" data-platform="baaeed" aria-label="Baaeed" title="Baaeed - Remote Work Platform">
+            <div class="footer-platform-logo-box">
+              <img src="assets/logos/freelance-baaeed.png" alt="Baaeed" class="footer-platform-logo" loading="lazy" />
+            </div>
+            <span class="footer-platform-name">Baaeed</span>
+            <i class="fa-solid fa-arrow-up-right-from-square footer-platform-link-icon" aria-hidden="true"></i>
+          </a>
+
+          <!-- 3. Freelance Yard -->
+          <a href="https://freelanceyard.com/ar/freelancers/duaa-mohamed" target="_blank" rel="noopener noreferrer" class="footer-freelance-card" data-platform="freelanceyard" aria-label="Freelance Yard" title="Freelance Yard - Top Middle-East Talent">
+            <div class="footer-platform-logo-box">
+              <img src="assets/logos/freelance-freelanceyard.png" alt="Freelance Yard" class="footer-platform-logo" loading="lazy" />
+            </div>
+            <span class="footer-platform-name">Freelance Yard</span>
+            <i class="fa-solid fa-arrow-up-right-from-square footer-platform-link-icon" aria-hidden="true"></i>
+          </a>
+
+          <!-- 4. Freelancer -->
+          <a href="https://www.freelancer.com/u/du0aa?frm=du0aa&sb=t" target="_blank" rel="noopener noreferrer" class="footer-freelance-card" data-platform="freelancer" aria-label="Freelancer" title="Freelancer - Global Hub">
+            <div class="footer-platform-logo-box">
+              <img src="assets/logos/freelance-freelancer.png" alt="Freelancer" class="footer-platform-logo" loading="lazy" />
+            </div>
+            <span class="footer-platform-name">Freelancer</span>
+            <i class="fa-solid fa-arrow-up-right-from-square footer-platform-link-icon" aria-hidden="true"></i>
+          </a>
+
+          <!-- 5. Nafezly -->
+          <a href="https://nafezly.com/u/doaa_m0hamed" target="_blank" rel="noopener noreferrer" class="footer-freelance-card" data-platform="nafezly" aria-label="Nafezly" title="Nafezly - Arab Freelancing Network">
+            <div class="footer-platform-logo-box">
+              <img src="assets/logos/freelance-nafezly.jpg" alt="Nafezly" class="footer-platform-logo" loading="lazy" />
+            </div>
+            <span class="footer-platform-name">Nafezly</span>
+            <i class="fa-solid fa-arrow-up-right-from-square footer-platform-link-icon" aria-hidden="true"></i>
+          </a>
+
+          <!-- 6. Khamsat -->
+          <a href="https://khamsat.com/user/doaa_mhmd_salah" target="_blank" rel="noopener noreferrer" class="footer-freelance-card" data-platform="khamsat" aria-label="Khamsat" title="Khamsat - Micro-services Hub">
+            <div class="footer-platform-logo-box">
+              <img src="assets/logos/freelance-khamsat.png" alt="Khamsat" class="footer-platform-logo" loading="lazy" />
+            </div>
+            <span class="footer-platform-name">Khamsat</span>
+            <i class="fa-solid fa-arrow-up-right-from-square footer-platform-link-icon" aria-hidden="true"></i>
+          </a>
+
+          <!-- 7. Kafiil -->
+          <a href="https://kafiil.com/u/duaa_mohamed" target="_blank" rel="noopener noreferrer" class="footer-freelance-card" data-platform="kafiil" aria-label="Kafiil" title="Kafiil - Trusted Services">
+            <div class="footer-platform-logo-box">
+              <img src="assets/logos/freelance-kafiil.png" alt="Kafiil" class="footer-platform-logo" loading="lazy" />
+            </div>
+            <span class="footer-platform-name">Kafiil</span>
+            <i class="fa-solid fa-arrow-up-right-from-square footer-platform-link-icon" aria-hidden="true"></i>
+          </a>
+
+          <!-- 8. Upwork -->
+          <a href="https://www.upwork.com/freelancers/~01455abfd85b3959ed?mp_source=share" target="_blank" rel="noopener noreferrer" class="footer-freelance-card" data-platform="upwork" aria-label="Upwork" title="Upwork - Enterprise & Global">
+            <div class="footer-platform-logo-box">
+              <img src="assets/logos/freelance-upwork.jpg" alt="Upwork" class="footer-platform-logo" loading="lazy" />
+            </div>
+            <span class="footer-platform-name">Upwork</span>
+            <i class="fa-solid fa-arrow-up-right-from-square footer-platform-link-icon" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">
+          &copy; <span id="currentYear"></span> Doaa Mohamed Salah. Designed with modern glassmorphism &amp; crafted with vanilla web standards.
+        </p>
+        
+        <!-- Smooth Back to Top Button -->
+        <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Scroll back to top">
+          <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- ACCESSIBLE MODALS                                                         -->
+  <!-- ========================================================================= -->
+
+  <!-- A. PROJECT DETAILS MODAL (Challenge -> Action -> Result Structure, No Bullets) -->
+  <div class="modal-backdrop" id="projectModalBackdrop" aria-hidden="true"></div>
+  <div class="modal-dialog-container" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="glass-card modal-window">
+      
+      <!-- Modal Close Button -->
+      <button class="modal-close-btn" id="closeProjectModalBtn" aria-label="Close project details">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Modal Body (Injected dynamically or updated via JS) -->
+      <div class="modal-body" id="modalProjectBody">
+        
+        <div class="modal-header-section">
+          <span class="modal-badge" id="modalProjectCategory">Graduation Project • Web App</span>
+          <h2 class="modal-title" id="modalProjectTitle">Shifa – Clinic Appointments & Nearby Pharmacies</h2>
+          <div class="modal-tags" id="modalProjectTags">
+            <!-- Dynamic tech tags -->
+          </div>
+        </div>
+
+        <!-- Achievement visual placeholder -->
+        <div class="modal-achievement-banner" id="modalProjectBanner">
+          <div class="banner-visual-box">
+            <i class="fa-solid fa-award"></i>
+            <span id="modalVisualCaption">Project Architectural Documentation & Final Delivery</span>
+          </div>
+        </div>
+
+        <!-- Challenge -> Action -> Result Narrative Sections (Strictly NO bullet lists) -->
+        <div class="modal-car-sections">
+          
+          <!-- Challenge Section -->
+          <div class="car-block challenge-block">
+            <div class="car-header">
+              <span class="car-step-badge">1</span>
+              <h3 class="car-title"><i class="fa-solid fa-triangle-exclamation"></i> The Challenge</h3>
+            </div>
+            <p class="car-text" id="modalChallengeText">
+              Patients frequently encounter significant hurdles when trying to coordinate clinical consultations: fragmented scheduling systems, conflicting doctor timetables, lack of transparent reviews, and the tedious difficulty of discovering open nearby pharmacies carrying required medications right after appointments.
+            </p>
+          </div>
+
+          <!-- Action Section -->
+          <div class="car-block action-block">
+            <div class="car-header">
+              <span class="car-step-badge">2</span>
+              <h3 class="car-title"><i class="fa-solid fa-gears"></i> The Action</h3>
+            </div>
+            <p class="car-text" id="modalActionText">
+              As Team Leader and Web Developer, I guided the team across the full project lifecycle. I engineered the relational database architecture supporting patients, doctors, appointments, schedules, reviews, and pharmacies with strict integrity constraints. I coordinated team task distribution, designed the complete architectural documentation (including Use Case diagrams, Activity workflows, and ERDs), and built core backend features using ASP.NET Core MVC, C#, ADO.NET, and modern responsive front-end interfaces.
+            </p>
+          </div>
+
+          <!-- Result Section -->
+          <div class="car-block result-block">
+            <div class="car-header">
+              <span class="car-step-badge">3</span>
+              <h3 class="car-title"><i class="fa-solid fa-trophy"></i> The Result</h3>
+            </div>
+            <p class="car-text" id="modalResultText">
+              Delivered a unified, high-performing clinic and pharmacy web ecosystem that successfully automated patient appointment booking and geolocation-based pharmacy search. The project earned distinction during academic presentation for its exceptional relational database normalization, comprehensive architectural documentation, and seamless team collaboration.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Modal Footer Actions -->
+        <div class="modal-footer-actions">
+          <a href="https://github.com/doaamhmdxo-21" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modalGithubLink">
+            <i class="fa-brands fa-github"></i> <span>Explore Repository</span>
+          </a>
+          <button class="btn btn-glass" id="modalDismissBtn">Close Details</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- B. PRICING PLAN MODAL (Packages for Website/App & Dashboard) -->
+  <div class="modal-backdrop" id="pricingModalBackdrop" aria-hidden="true"></div>
+  <div class="modal-dialog-container" id="pricingModal" role="dialog" aria-modal="true" aria-labelledby="pricingModalTitle" aria-hidden="true">
+    <div class="glass-card modal-window pricing-modal-window">
+      
+      <button class="modal-close-btn" id="closePricingModalBtn" aria-label="Close pricing modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-body">
+        
+        <div class="modal-header-section text-center">
+          <span class="modal-badge">Transparent Engagement</span>
+          <h2 class="modal-title" id="pricingModalTitle">Service Packages & Pricing Plans</h2>
+          <p class="section-subtitle">Flexible packages tailored for businesses, startups, and academic initiatives.</p>
+        </div>
+
+        <div class="pricing-modal-grid">
+          
+          <!-- Package 1: Full Website / Web App -->
+          <div class="glass-card package-card featured-package">
+            <div class="popular-ribbon">Recommended</div>
+            <div class="pkg-header">
+              <h3 class="pkg-name">Full Web Application</h3>
+              <p class="pkg-subtitle">Modern, responsive web products built from design to deployment.</p>
+              <div class="pkg-price">
+                <span class="currency">$</span>
+                <span class="amount">Custom</span>
+                <span class="period">/ Project-based</span>
+              </div>
+            </div>
+            
+            <div class="pkg-highlights">
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> Custom responsive UI with modern glassmorphism</div>
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> Backend API & database integration (ASP.NET / SQL)</div>
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> Performance optimization & cross-device compatibility</div>
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> Complete systems documentation & GitHub source handover</div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary btn-block select-pkg-btn" data-pkg="Web App">
+              <span>Discuss Project Scope</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Package 2: Full Data Dashboard (Power BI) -->
+          <div class="glass-card package-card">
+            <div class="pkg-header">
+              <h3 class="pkg-name">Executive BI Dashboard</h3>
+              <p class="pkg-subtitle">Turn disparate spreadsheets into interactive executive intelligence.</p>
+              <div class="pkg-price">
+                <span class="currency">$</span>
+                <span class="amount">Custom</span>
+                <span class="period">/ Dashboard</span>
+              </div>
+            </div>
+
+            <div class="pkg-highlights">
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> Data cleaning & transformation via Power Query</div>
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> Star schema data modeling & relational linkage</div>
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> Custom DAX calculations, KPI scorecards & trend lines</div>
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> Interactive filters, drill-throughs & export capabilities</div>
+            </div>
+
+            <a href="#contact" class="btn btn-glass btn-block select-pkg-btn" data-pkg="BI Dashboard">
+              <span>Request Dashboard Proposal</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Package 3: Database & Architectural Modeling -->
+          <div class="glass-card package-card">
+            <div class="pkg-header">
+              <h3 class="pkg-name">Database Architecture & ERD</h3>
+              <p class="pkg-subtitle">Robust relational design, schema normalization, and SQL optimization.</p>
+              <div class="pkg-price">
+                <span class="currency">$</span>
+                <span class="amount">Custom</span>
+                <span class="period">/ Architecture</span>
+              </div>
+            </div>
+
+            <div class="pkg-highlights">
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> Comprehensive Entity Relationship Diagram (ERD)</div>
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> 3NF Normalization & referential integrity constraints</div>
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> SQL schema DDL/DML scripts (SQL Server, MySQL, Oracle)</div>
+              <div class="pkg-item"><i class="fa-solid fa-check"></i> Detailed systems analysis documentation & workflow maps</div>
+            </div>
+
+            <a href="#contact" class="btn btn-glass btn-block select-pkg-btn" data-pkg="Database Modeling">
+              <span>Consult on Architecture</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- C. CERTIFICATE LIGHTBOX MODAL -->
+  <div class="modal-backdrop" id="certLightboxBackdrop" aria-hidden="true"></div>
+  <div class="modal-dialog-container" id="certLightboxModal" role="dialog" aria-modal="true" aria-labelledby="certLightboxTitle" aria-hidden="true">
+    <div class="glass-card modal-window cert-lightbox-window">
+      <button class="modal-close-btn" id="closeCertLightboxBtn" aria-label="Close certificate preview">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="cert-lightbox-header">
+        <span class="cert-lightbox-issuer badge-accent" id="certLightboxIssuer">Verified Credential</span>
+        <h3 class="cert-lightbox-title" id="certLightboxTitle">Certificate</h3>
+      </div>
+      <div class="cert-lightbox-img-wrap">
+        <img src="" alt="Verified Certificate Preview" id="certLightboxImage" />
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP 3.12.5 & ScrollTrigger: local vendor (offline-first) + CDN fallback -->
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script>if(typeof gsap==='undefined'){document.write('<scr'+'ipt src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"><\\/scr'+'ipt>');}</script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script>if(typeof ScrollTrigger==='undefined'){document.write('<scr'+'ipt src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"><\\/scr'+'ipt>');}</script>
+
+  <!-- Lenis Smooth Scroll 1.1.18: local vendor (offline-first) + CDN fallback -->
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script>if(typeof Lenis==='undefined'){document.write('<scr'+'ipt src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"><\\/scr'+'ipt>');}</script>
+
+  <!-- JavaScript Application Bundle -->
+  <script src="script.js"></script>
+</body>
+</html>
