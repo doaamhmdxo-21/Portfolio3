@@ -560,7 +560,7 @@ html:not(.js) .hero-word {
    8. NAVBAR
    -------------------------------------------------------------------------- */
 .navbar-wrapper {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
